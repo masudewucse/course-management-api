@@ -7,6 +7,7 @@ const categorySchema = new mongoose.Schema({
             type: String,
             minlength:3,
             maxlength:255,
+            required:true
         },
         time:{
            type: Date,

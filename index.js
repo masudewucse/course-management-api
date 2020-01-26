@@ -1,8 +1,11 @@
 
+const Joi = require('joi');
+Joi.objectId = require('joi-objectid')(Joi); // its a function
 const mongoose = require('mongoose');
 const express = require('express');
 const app = express();
 const categories = require('./routes/categories');
+const courses = require('./routes/courses');
 
 
 
@@ -12,6 +15,7 @@ mongoose.connect('mongodb://localhost/course_management', {useNewUrlParser: true
 
 app.use(express.json());
 app.use('/api/category', categories);
+app.use('/api/courses', courses);
 
 
 // app.get('/api/courses',(req,res)=>{
