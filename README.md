@@ -16,11 +16,11 @@ CATEGORY:
 
 COURSE:
 (Create) POST: http://localhost:3005/api/courses  
-{"name":"",
+<pre>{"name":"",
 "categoryId":"",
 "endDate":Date,
 "price": 6,
-"inStock":10}
+"inStock":10}</pre>
 (View) GEY: http://localhost:3005/api/courses  or http://localhost:3005/api/courses/Course_objectID
 (Edit) PUT: http://localhost:3005/api/courses/Course_objectID
 (Delete) DELETE: http://localhost:3005/api/courses/Course_objectID
