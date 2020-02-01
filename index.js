@@ -6,6 +6,7 @@ const express = require('express');
 const app = express();
 const categories = require('./routes/categories');
 const courses = require('./routes/courses');
+const users = require('./routes/users');
 
 
 
@@ -16,6 +17,7 @@ mongoose.connect('mongodb://localhost/course_management', {useNewUrlParser: true
 app.use(express.json());
 app.use('/api/category', categories);
 app.use('/api/courses', courses);
+app.use('/api/users', users);
 
 
 // app.get('/api/courses',(req,res)=>{
