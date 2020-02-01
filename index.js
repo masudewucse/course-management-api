@@ -7,6 +7,7 @@ const app = express();
 const categories = require('./routes/categories');
 const courses = require('./routes/courses');
 const users = require('./routes/users');
+const bookings = require('./routes/bookings');
 
 
 
@@ -18,16 +19,8 @@ app.use(express.json());
 app.use('/api/category', categories);
 app.use('/api/courses', courses);
 app.use('/api/users', users);
+app.use('/api/bookings', bookings);
 
-
-// app.get('/api/courses',(req,res)=>{
-// res.send('<h1>this is masud rana</h1>');
-// });
-
-// app.post('/api/courses',(req,res)=>{
-//     res.send(req.body);
-//     //console.log(req.body);
-// });
 
 
 

@@ -14,6 +14,10 @@ const userSchema = new mongoose.Schema({
             minlength: 3,
             required: true
         },
+        phone:{
+            type: Number,
+            required: true
+        },
         email:{
             type: String,
             minlength: 3,
@@ -33,6 +37,7 @@ function userValidation(user){
     const schema = {
         name: Joi.string().min(3).required(),
         address: Joi.string().required(),
+        phone: Joi.number().required(),
         email: Joi.string().required(),
         password: Joi.string().required()
     };
