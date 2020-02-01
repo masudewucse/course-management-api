@@ -1,11 +1,12 @@
-Course Management API using NodeJS<br>
+Course Management API using NodeJS & MongoDB<br>
 
 MongoDB Database:<br>
 <pre>
 course_category: name					
-courses:	     name	    category	    startdate	enddate	price	instock
-users:	         name	    address	email	pass	    date	
-booking:	     userobject	courseobject	time	</pre><br>		
+courses: name category startdate enddate price instock
+users:  name address email pass date	
+booking: userobject	courseobject time
+</pre><br>		
 
 
 CATEGORY:<br>
