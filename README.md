@@ -13,7 +13,7 @@ CATEGORY:<br>
 <pre>
 {"name": ""}
 </pre>
-(View) GEY: `http://localhost:3005/api/category`  or `http://localhost:3005/api/category/Cat_objectID`<br>
+(View) GET: `http://localhost:3005/api/category`  or `http://localhost:3005/api/category/Cat_objectID`<br>
 (Edit) PUT: `http://localhost:3005/api/category/Cat_objectID`<br>
 (Delete) DELETE: `http://localhost:3005/api/category/Cat_objectID`<br>
 
@@ -26,7 +26,7 @@ COURSE:<br>
 "price": 6,
 "inStock":10}
 </pre>
-(View) GEY: `http://localhost:3005/api/courses`  or `http://localhost:3005/api/courses/Course_objectID`<br>
+(View) GET: `http://localhost:3005/api/courses`  or `http://localhost:3005/api/courses/Course_objectID`<br>
 (Edit) PUT: `http://localhost:3005/api/courses/Course_objectID`<br>
 (Delete) DELETE: `http://localhost:3005/api/courses/Course_objectID`<br>
 
